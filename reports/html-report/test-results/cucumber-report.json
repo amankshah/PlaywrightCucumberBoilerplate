@@ -1,0 +1,237 @@
+[
+  {
+    "description": "  As a user\n  I want to manage my todo items\n  So that I can keep track of my tasks",
+    "elements": [
+      {
+        "description": "",
+        "id": "todo-list-management;add-a-new-todo-item",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add a new todo item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1275479400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2081715499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add a new todo item \"Buy groceries\"",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126255700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see \"Buy groceries\" in the todo list",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20227499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 418494500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list-management;complete-a-todo-item",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Complete a todo item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1055591800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2237421900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I have a todo item \"Buy groceries\"",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90941999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I complete the todo item \"Buy groceries\"",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72555299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "It should show as completed",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8679500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 497868599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "todo-list-management;delete-a-todo-item",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Delete a todo item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 890740399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am on the todo page",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 740258799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I have a todo item \"Buy groceries\"",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169703100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I delete the todo item \"Buy groceries\"",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117072899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "It should be removed from the list",
+            "match": {
+              "location": "step-definitions\\todo.steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6146799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 482730900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "todo-list-management",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Todo List Management",
+    "tags": [],
+    "uri": "features\\todo.feature"
+  }
+]

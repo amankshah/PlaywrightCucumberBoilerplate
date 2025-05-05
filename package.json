@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
-    "test:allure": "rimraf allure-results && cucumber-js && allure generate ./allure-results --clean && allure open allure-report",
-    "generate-report": "node generate-report.js"
+    "start": "vite",
+    "test": "cucumber-js --config configs/cucumber-js.js",
+    "test:allure": "rimraf reports/allure && cucumber-js --config configs/cucumber-js.js && allure generate ./reports/allure --clean -o ./reports/allure-report && allure open reports/allure-report",
+    "generate-report": "node configs/generate-report.js",
+    "test:playwright": "playwright test --config=configs/playwright.config.js"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +18,17 @@
     "@cucumber/html-formatter": "^21.10.1",
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.5",
+    "@vitejs/plugin-react": "^4.2.1",
     "allure-commandline": "^2.34.0",
     "allure-cucumberjs": "^3.2.1",
     "allure-playwright": "^3.2.1",
     "cucumber-html-reporter": "^6.0.0",
     "multiple-cucumber-html-reporter": "^3.9.2",
-    "rimraf": "^5.0.10"
+    "rimraf": "^5.0.10",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
