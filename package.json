@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "x": "npm run test && npm run test:allure",
-    "test": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js",
-    "test:allure": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js && allure generate ./allure-results --clean && allure open allure-report",
+    "test": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format progress-bar",
+    "test:allure": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format progress-bar && allure generate ./allure-results --clean && allure open allure-report",
     "generate-report": "node generate-report.js"
   },
   "keywords": [],

@@ -6,6 +6,8 @@ module.exports = {
         'support/**/*.js'
       ],
       format: [
+        'progress-bar',
+        'summary',
         'html:test-results/cucumber-report.html',
         'json:test-results/cucumber-report.json',
         'allure-cucumberjs/reporter'
@@ -14,7 +16,11 @@ module.exports = {
         'allure-cucumberjs/reporter': {
           resultsDir: 'allure-results'
         }
-      }
+      },
+      publishQuiet: false,
+      parallel: 1,
+      retry: 0,
+      exit: false
     }
   };
   
