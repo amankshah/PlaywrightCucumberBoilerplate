@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "x": "npm run test && npm run test:allure",
     "test": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js",
     "test:allure": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js && allure generate ./allure-results --clean && allure open allure-report",
     "generate-report": "node generate-report.js"
@@ -20,7 +21,6 @@
     "allure-cucumberjs": "^3.2.1",
     "allure-playwright": "^3.2.1",
     "cucumber-html-reporter": "^6.0.0",
-    "multiple-cucumber-html-reporter": "^3.9.2",
     "rimraf": "^5.0.10"
   }
 }

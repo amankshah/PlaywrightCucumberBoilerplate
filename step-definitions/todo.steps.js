@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
-const PageManager = require('../pages/page.manager');
+const PageManager = require('../page.manager');
 
 Given('I am on the todo page', async function() {
   await this.page.goto('https://demo.playwright.dev/todomvc');
