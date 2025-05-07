@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
-    "test:allure": "rimraf allure-results && cucumber-js && allure generate ./allure-results --clean && allure open allure-report",
+    "test": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js",
+    "test:allure": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js && allure generate ./allure-results --clean && allure open allure-report",
     "generate-report": "node generate-report.js"
   },
   "keywords": [],
