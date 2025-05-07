@@ -32,6 +32,7 @@ jobs:
       run: npx playwright test
       env:
         CI: true
+        PLAYWRIGHT_HEADLESS: true
     
     - name: Upload Playwright results
       uses: actions/upload-artifact@v4
@@ -63,6 +64,7 @@ jobs:
       run: npm run test
       env:
         CI: true
+        PLAYWRIGHT_HEADLESS: true
     
     - name: Generate Allure report
       run: npm run test:allure
