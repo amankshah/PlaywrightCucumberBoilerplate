@@ -1,11 +1,12 @@
 {
-  "name": "playwright-bingo",
+  "name": "bdd-framework-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "x": "npm run test && npm run test:allure",
     "test": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format progress-bar",
-    "test:allure": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format progress-bar && allure generate ./allure-results --clean && allure open allure-report",
+    "test:allure": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format progress-bar && allure generate ./allure-results --clean",
+    "test:allure:open": "rimraf allure-results && node ./node_modules/@cucumber/cucumber/bin/cucumber-js --format progress-bar && allure generate ./allure-results --clean && allure open allure-report",
     "generate-report": "node generate-report.js"
   },
   "keywords": [],
