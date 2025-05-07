@@ -3,14 +3,16 @@ const { chromium } = require('@playwright/test');
 
 class CustomWorld {
   async init() {
-    this.browser = await chromium.launch({ headless: false });
+    this.browser = await chromium.launch({ 
+      headless: process.env.CI ? true : false 
+    });
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
   }
 
   async cleanup() {
-    await this.context.close();
-    await this.browser.close();
+    if (this.context) await this.context.close();
+    if (this.browser) await this.browser.close();
   }
 }
 
